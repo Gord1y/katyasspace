@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 
 export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false)
-	const [activeSection, setActiveSection] = useState('home')
+	const [activeSection, setActiveSection] = useState('')
 
 	const [sectionNames] = useState<string[]>([
 		'home',
@@ -43,7 +43,7 @@ export default function Header() {
 				'bg-black text-primary': !isScrolled,
 			})}
 		>
-			<div className='w-10/12 max-w-screen-md mx-auto flex flex-row items-center justify-between py-3 sm:py-5'>
+			<div className='w-10/12 max-w-screen-xl mx-auto flex flex-row items-center justify-between py-3 sm:py-5'>
 				<a href='/' className='text-2xl'>
 					Katyas Website
 				</a>

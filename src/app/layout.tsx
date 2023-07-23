@@ -3,10 +3,10 @@ import Header from '@/components/layout/Header'
 import '@/styles/global.scss'
 import cn from 'clsx'
 import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
+import { Caveat } from 'next/font/google'
 import 'normalize.css/normalize.css'
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+const montserrat = Caveat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Create Next App',

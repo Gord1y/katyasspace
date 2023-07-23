@@ -1,9 +1,16 @@
+import Main from '@/components/layout/Main'
+import { About } from '@/components/sections/About'
+import { Home } from '@/components/sections/Home'
+import Prices from '@/components/sections/Prices'
+
 export default function HomePage() {
 	return (
 		<>
-			<section className='h-screen w-full bg-black' id='home'>
-				<div className='flex justify-betwewen items-center'></div>
-			</section>
+			<Home />
+			<Main>
+				<About />
+				<Prices />
+			</Main>
 		</>
 	)
 }
