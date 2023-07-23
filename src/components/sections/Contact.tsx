@@ -3,10 +3,10 @@ import Link from 'next/link'
 export default function Contact() {
 	return (
 		<section
-			className='w-full mt-14 flex flex-col md:flex-row-reverse justify-center items-center'
+			className='w-full mt-16 flex flex-col md:flex-row-reverse justify-center items-center'
 			id='Контакти'
 		>
-			<div className='w-full md:w-2/5 p-10 min-h-fit md: h-screen flex flex-col gap-3 justify-center text-2xl text-primary bg-secondary'>
+			<div className='w-full md:w-2/5 p-16 min-h-fit md:h-screen flex flex-col gap-3 justify-center text-2xl text-primary bg-secondary'>
 				<div className='text-4xl md:text-5xl font-semibold'>Напишіть мені</div>
 				<div className='flex flex-col gap-2 md:gap-4'>
 					<Link href='' className='flex items-center gap-2 md:gap-4'>
@@ -63,11 +63,11 @@ export default function Contact() {
 					</Link>
 				</div>
 			</div>
-			<div className='w-full md:w-3/5 p-10 min-h-fit md:h-4/5 flex flex-col gap-3 justify-center text-xl items-center text-black bg-white'>
+			<div className='w-full md:w-3/5 p-10 min-h-fit md:h-4/5 flex flex-col gap-3 justify-center text-xl items-center text-black md:bg-white'>
 				<div className='text-2xl md:text-3xl font-semibold'>
 					Форма для зворотнього зв’язку
 				</div>
-				<form className='flex flex-wrap gap-2 w-11/12 max-w-md mt-5 '>
+				<form className='flex flex-wrap gap-2 w-full md:w-11/12 max-w-md mt-5 '>
 					<div className='text-xl md:text-2xl w-full'>
 						Ваше ім’я та прізвище
 					</div>
