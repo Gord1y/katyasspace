@@ -6,13 +6,13 @@ import { useEffect, useState } from 'react'
 
 export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false)
-	const [activeSection, setActiveSection] = useState('')
+	const [activeSection, setActiveSection] = useState('Головна')
 
 	const [sectionNames] = useState<string[]>([
-		'home',
-		'about',
-		'prices',
-		'contact',
+		'Головна',
+		'Про мене',
+		'Ціни',
+		'Контакти',
 	])
 
 	useEffect(() => {
@@ -39,8 +39,8 @@ export default function Header() {
 	return (
 		<header
 			className={cn('fixed w-full', {
-				'bg-primary text-black shadow-grey shadow': isScrolled,
-				'bg-black text-primary': !isScrolled,
+				'bg-primary text-secondary shadow-secondary shadow': isScrolled,
+				'bg-secondary text-primary': !isScrolled,
 			})}
 		>
 			<div className='w-10/12 max-w-screen-xl mx-auto flex flex-row items-center justify-between py-3 sm:py-5'>
@@ -58,7 +58,7 @@ export default function Header() {
 								width='24'
 								height='24'
 								viewBox='0 0 24 24'
-								fill={isScrolled ? 'black' : 'white'}
+								fill={isScrolled ? '#53AAF9' : 'white'}
 							>
 								<path d='M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z' />
 							</svg>
@@ -82,7 +82,7 @@ export default function Header() {
 									<line x1='6' y1='6' x2='18' y2='18' />
 								</svg>
 							</div>
-							<ul className='flex flex-col items-center justify-between min-h-[250px]'>
+							<ul className='flex flex-col items-center justify-between min-h-[250px] text-secondary'>
 								{sectionNames.map(sectionName => (
 									<li key={sectionName}>
 										<a
@@ -110,7 +110,7 @@ export default function Header() {
 											underline: activeSection === sectionName,
 										},
 										{
-											'text-black': isScrolled,
+											'text-secondary': isScrolled,
 											'text-primary': !isScrolled,
 										}
 									)}

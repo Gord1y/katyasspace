@@ -1,11 +1,10 @@
 import { FC } from 'react'
+import { Heading } from '../ui/Heading'
 
 export const About: FC = () => {
 	return (
-		<section className='w-full mt-10' id='about'>
-			<div className='text-3xl sm:text-7xl font-semibold text-center w-full'>
-				Про мене
-			</div>
+		<section className='w-full pt-16' id='Про мене'>
+			<Heading title='Про мене' />
 			<div className='mt-2 sm:mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-evenly gap-5 text-2xl sm:text-3xl'>
 				<div className='w-full sm:w-2/5'>
 					Досвідчений репетитор з англійської та італійської мови, який володіє

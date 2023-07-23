@@ -10,13 +10,12 @@ import 'swiper/css/pagination'
 import '@/styles/swiper.scss'
 import Image from 'next/image'
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules'
+import { Heading } from '../ui/Heading'
 
 export default function App() {
 	return (
-		<section className='w-full mt-10 h-screen' id='prices'>
-			<div className='text-3xl sm:text-7xl font-semibold text-center w-full'>
-				Ціни
-			</div>
+		<section className='w-full pt-16' id='Ціни'>
+			<Heading title='Ціни' />
 			<Swiper
 				effect={'coverflow'}
 				slidesPerView={3}

@@ -20,7 +20,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='ua'>
-			<body className={cn('bg-primary font-medium', montserrat.className)}>
+			<body
+				className={cn(
+					'bg-primary font-medium text-black',
+					montserrat.className
+				)}
+			>
 				<Header />
 				{children}
 				<Footer />

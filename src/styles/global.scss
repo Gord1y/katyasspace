@@ -14,5 +14,8 @@
 	@apply bg-primary;
 }
 *::-webkit-scrollbar-thumb {
-	@apply border-2 border-primary bg-black rounded;
+	@apply border-2 border-primary bg-secondary rounded;
+}
+html {
+	scroll-behavior: smooth;
 }

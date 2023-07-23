@@ -5,7 +5,7 @@ import { FC } from 'react'
 export const Home: FC = () => {
 	return (
 		<>
-			<section className='h-screen w-full bg-black' id='home'>
+			<section className='h-screen w-full bg-secondary' id='Головна'>
 				<div className='w-10/12 max-w-screen-xl mx-auto h-full flex flex-col sm:flex-row-reverse sm:justify-between items-center gap-5 justify-center'>
 					<Image
 						src={img}
