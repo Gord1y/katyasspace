@@ -27,6 +27,7 @@ const Section = forwardRef<HTMLElement, ISection>(
 		<motion.section
 			initial='offscreen'
 			whileInView='onscreen'
+			viewport={{ once: true }}
 			variants={cardVariants}
 			className={className}
 			id={id}
