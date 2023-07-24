@@ -123,7 +123,7 @@ export default function ContactForm() {
 			/>
 			<button
 				type='submit'
-				className='w-full md:w-1/2 p-2 rounded-md border-2 border-black text-secondary hover:bg-black hover:text-white'
+				className='w-full md:w-1/2 p-2 rounded-md border-2 border-black text-black hover:bg-black hover:text-white'
 			>
 				Відправити
 			</button>
