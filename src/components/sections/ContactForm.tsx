@@ -117,13 +117,13 @@ export default function ContactForm() {
 			<div className='text-xl md:text-2xl w-full'>Будь які додаткові дані</div>
 			<textarea
 				name='message'
-				rows={5}
+				rows={3}
 				placeholder='Повідомлення'
 				className='w-full p-2 rounded-md border-2 border-black placeholder:text-secondary outline-none focus:border-black'
 			/>
 			<button
 				type='submit'
-				className='w-full md:w-1/2 p-2 rounded-md border-2 border-black text-black hover:bg-black hover:text-white'
+				className='mt-1 w-full md:w-1/2 p-2 rounded-md border-2 border-black text-black hover:bg-black hover:text-white'
 			>
 				Відправити
 			</button>
