@@ -15,7 +15,7 @@ export const Home: FC = () => {
 						className='w-full sm:w-1/4'
 					/>
 					<div className='flex flex-col gap-2 w-full sm:w-2/5 text-primary'>
-						<p className='text-lg sm:texl-xl'>Привіт, я</p>
+						<p className='text-lg md:text-2xl'>Привіт, я</p>
 						<p className='text-6xl sm:leading-relaxed'>Волковська Катерина</p>
 						<p className='text-xl sm:texl-2xl'>
 							Досвідчений репетитор, <br />
