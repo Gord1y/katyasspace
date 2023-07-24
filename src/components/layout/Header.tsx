@@ -38,7 +38,7 @@ export default function Header() {
 
 	return (
 		<header
-			className={cn('fixed w-full', {
+			className={cn('fixed w-full z-10', {
 				'bg-primary text-secondary shadow-secondary shadow': isScrolled,
 				'bg-secondary text-primary': !isScrolled,
 			})}
