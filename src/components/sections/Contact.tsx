@@ -143,7 +143,6 @@ export default function Contact() {
 						rows={5}
 						placeholder='Повідомлення'
 						className='w-full p-2 rounded-md border-2 border-black placeholder:text-black'
-						required
 					/>
 					<button
 						type='submit'
