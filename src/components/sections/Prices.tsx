@@ -26,7 +26,7 @@ export default function App() {
 					<p className='text-2xl md:text-3xl'>300грн/60хв</p>
 					<p className='text-xl md:text-2xl'>
 						Наступний урок, після пробного, під час якого уже починаємо щось
-						розбирати та вибираємо шляхи вивчення
+						розбирати та обираємо шляхи вивчення
 					</p>
 				</div>
 			</div>
