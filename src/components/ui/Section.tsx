@@ -1,12 +1,13 @@
 'use client'
 import { Variants, motion } from 'framer-motion'
-import { InputHTMLAttributes, forwardRef } from 'react'
+import { FC, InputHTMLAttributes } from 'react'
 
 export interface ISection extends InputHTMLAttributes<HTMLElement> {
 	id: string
 	children: React.ReactNode
 	className?: string
 }
+
 const cardVariants: Variants = {
 	offscreen: {
 		x: -100,
@@ -22,8 +23,8 @@ const cardVariants: Variants = {
 	},
 }
 
-const Section = forwardRef<HTMLElement, ISection>(
-	({ children, id, className }) => (
+const Section: FC<ISection> = ({ children, id, className }) => {
+	return (
 		<motion.section
 			initial='offscreen'
 			whileInView='onscreen'
@@ -35,8 +36,5 @@ const Section = forwardRef<HTMLElement, ISection>(
 			{children}
 		</motion.section>
 	)
-)
-
-Section.displayName = 'Section'
-
+}
 export default Section
