@@ -1,6 +1,30 @@
+'use client'
+import emailjs from '@emailjs/browser'
 import Link from 'next/link'
+import { useRef } from 'react'
 
 export default function Contact() {
+	const form = useRef<HTMLFormElement>(null)
+	const sendEmail = (e: { preventDefault: () => void }) => {
+		e.preventDefault()
+		if (form.current)
+			emailjs
+				.sendForm(
+					'service_fl1fch6',
+					'template_dt05hyr',
+					form.current,
+					'dAsoY-KQOF7HgVGCS'
+				)
+				.then(
+					result => {
+						console.log(result.text)
+					},
+					error => {
+						console.log(error.text)
+					}
+				)
+	}
+
 	return (
 		<section
 			className='w-full mt-16 flex flex-col md:flex-row-reverse justify-center items-center'
@@ -73,7 +97,11 @@ export default function Contact() {
 				<div className='text-2xl md:text-3xl font-semibold'>
 					Форма для зворотнього зв’язку
 				</div>
-				<form className='flex flex-wrap gap-2 w-full md:w-11/12 max-w-md mt-5 '>
+				<form
+					ref={form}
+					onSubmit={sendEmail}
+					className='flex flex-wrap gap-2 w-full md:w-11/12 max-w-md mt-5 '
+				>
 					<div className='text-xl md:text-2xl w-full'>
 						Ваше ім’я та прізвище
 					</div>
