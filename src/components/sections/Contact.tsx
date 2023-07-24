@@ -1,30 +1,6 @@
-'use client'
-import emailjs from '@emailjs/browser'
 import Link from 'next/link'
-import { useRef } from 'react'
-
+import ContactForm from './ContactForm'
 export default function Contact() {
-	const form = useRef<HTMLFormElement>(null)
-	const sendEmail = (e: { preventDefault: () => void }) => {
-		e.preventDefault()
-		if (form.current)
-			emailjs
-				.sendForm(
-					'service_fl1fch6',
-					'template_dt05hyr',
-					form.current,
-					'dAsoY-KQOF7HgVGCS'
-				)
-				.then(
-					result => {
-						console.log(result.text)
-					},
-					error => {
-						console.log(error.text)
-					}
-				)
-	}
-
 	return (
 		<section
 			className='w-full mt-16 flex flex-col md:flex-row-reverse justify-center items-center'
@@ -97,60 +73,7 @@ export default function Contact() {
 				<div className='text-2xl md:text-3xl font-semibold'>
 					Форма для зворотнього зв’язку
 				</div>
-				<form
-					ref={form}
-					onSubmit={sendEmail}
-					className='flex flex-wrap gap-2 w-full md:w-11/12 max-w-md mt-5 '
-				>
-					<div className='text-xl md:text-2xl w-full'>
-						Ваше ім’я та прізвище
-					</div>
-					<input
-						type='text'
-						name='name'
-						placeholder='Ім’я'
-						className='w-full md:w-5/12 p-2 rounded-md border-2 border-black placeholder:text-black'
-						required
-					/>
-					<input
-						type='text'
-						name='surname'
-						placeholder='Прізвище'
-						className='w-full md:w-5/12 p-2 rounded-md border-2 border-black placeholder:text-black'
-						required
-					/>
-					<div className='text-xl md:text-2xl w-full'>
-						Ваш номер телефону та мессенджер для зв’язку
-					</div>
-					<input
-						type='text'
-						name='phone'
-						placeholder='+380XXXXXXXXX'
-						className='w-full md:w-5/12 p-2 rounded-md border-2 border-black placeholder:text-black'
-						required
-					/>
-					<input
-						type='text'
-						name='messenger'
-						placeholder='Telegram, Viber...'
-						className='w-full md:w-5/12 p-2 rounded-md border-2 border-black placeholder:text-black'
-					/>
-					<div className='text-xl md:text-2xl w-full'>
-						Будь які додаткові дані
-					</div>
-					<textarea
-						name='message'
-						rows={5}
-						placeholder='Повідомлення'
-						className='w-full p-2 rounded-md border-2 border-black placeholder:text-black'
-					/>
-					<button
-						type='submit'
-						className='w-full md:w-1/2 p-2 rounded-md border-2 border-black placeholder:text-black hover:bg-black hover:text-white'
-					>
-						Відправити
-					</button>
-				</form>
+				<ContactForm />
 			</div>
 		</section>
 	)
