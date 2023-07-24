@@ -56,7 +56,7 @@ export default function ContactForm() {
 	return (
 		<form
 			onSubmit={handleSubmit(onSubmit)}
-			className='flex flex-wrap gap-2 w-full md:w-11/12 max-w-md mt-5 '
+			className='flex flex-wrap gap-2 w-full md:w-11/12 max-w-md'
 		>
 			<Field
 				title='Ім’я'

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import ContactForm from './ContactForm'
 import Section from '../ui/Section'
+import ContactForm from './ContactForm'
 export default function Contact() {
 	return (
 		<Section
@@ -70,7 +70,7 @@ export default function Contact() {
 					</Link>
 				</div>
 			</div>
-			<div className='w-full md:w-3/5 p-10 min-h-fit md:h-4/5 flex flex-col gap-3 justify-center text-xl items-center text-black md:bg-white'>
+			<div className='w-full md:w-3/5 p-5 min-h-fit flex flex-col gap-3 justify-center text-xl items-center text-black md:bg-white'>
 				<div className='text-2xl md:text-3xl font-semibold'>
 					Форма для зворотнього зв’язку
 				</div>

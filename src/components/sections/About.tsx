@@ -8,10 +8,11 @@ export const About: FC = () => {
 			<Heading title='Про мене' />
 			<div className='mt-2 sm:mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-evenly gap-5 text-2xl sm:text-3xl'>
 				<div className='w-full sm:w-2/5'>
-					Досвідчений репетитор з англійської та італійської мови, який володіє
-					різними методиками викладання. Більше 2 років навчаю учнів різних
-					вікових категорій, розповідаю щось нове, та розвиваю навики вивчення
-					цих мов.
+					Досвідчений репетитор з{' '}
+					<b className='text-secondary'>англійської та італійської мови</b>,
+					який володіє різними методиками викладання. Більше 2 років навчаю
+					учнів різних вікових категорій, розповідаю щось нове, та розвиваю
+					навики вивчення цих мов.
 				</div>
 				<div className='w-full h-px sm:w-px sm:h-60 bg-black' />
 				<div className='flex flex-col gap-3 sm:gap-10'>

@@ -3,7 +3,7 @@ import Section from '../ui/Section'
 
 export default function App() {
 	return (
-		<Section id='Ціни'>
+		<Section className='w-full pt-16' id='Ціни'>
 			<Heading title='Ціни' />
 			<div className='flex flex-col md:flex-row overflow-hidden justify-center items-center w-full mt-5 gap-5 md:gap-8'>
 				<div className='flex flex-col gap-2 justify-center items-center p-5 snap-center border-2 border-secondary text-secondary rounded-lg md:w-1/4'>
