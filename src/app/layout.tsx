@@ -60,7 +60,7 @@ export default function RootLayout({
 		<html lang='uk'>
 			<body
 				className={cn(
-					'bg-primary font-medium text-black',
+					'bg-primary font-medium text-black overflow-x-hidden',
 					montserrat.className
 				)}
 			>

@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import ContactForm from './ContactForm'
+import Section from '../ui/Section'
 export default function Contact() {
 	return (
-		<section
+		<Section
 			className='w-full mt-16 flex flex-col md:flex-row-reverse justify-center items-center'
 			id='Контакти'
 		>
@@ -75,6 +76,6 @@ export default function Contact() {
 				</div>
 				<ContactForm />
 			</div>
-		</section>
+		</Section>
 	)
 }

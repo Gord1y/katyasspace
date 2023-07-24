@@ -1,9 +1,10 @@
 import { FC } from 'react'
 import { Heading } from '../ui/Heading'
+import Section from '../ui/Section'
 
 export const About: FC = () => {
 	return (
-		<section className='w-full pt-16' id='Про мене'>
+		<Section className='w-full pt-16' id='Про мене'>
 			<Heading title='Про мене' />
 			<div className='mt-2 sm:mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-evenly gap-5 text-2xl sm:text-3xl'>
 				<div className='w-full sm:w-2/5'>
@@ -68,6 +69,6 @@ export const About: FC = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</Section>
 	)
 }
