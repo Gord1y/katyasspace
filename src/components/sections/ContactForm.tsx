@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import Field from '../ui/input/Field'
+
 export default function ContactForm() {
 	interface IForm {
 		name: string
@@ -32,10 +33,10 @@ export default function ContactForm() {
 
 		emailjs
 			.send(
-				'service_fl1fch6',
-				'template_dt05hyr',
+				process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '',
+				process.env.NEXT_PUBLIC_EMAIL_TEMPLETE_ID || '',
 				template_params,
-				'dAsoY-KQOF7HgVGCS'
+				process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY || ''
 			)
 			.then(
 				result => {
