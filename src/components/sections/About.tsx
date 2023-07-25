@@ -10,12 +10,12 @@ export const About: FC = () => {
 				<div className='w-full sm:w-2/5'>
 					Досвідчений репетитор з{' '}
 					<b className='text-secondary'>англійської та італійської мови</b>,
-					який володіє різними методиками викладання. Більше 2 років навчаю
-					учнів різних вікових категорій, розповідаю щось нове, та розвиваю
-					навики вивчення цих мов.
+					який володіє різними методиками викладання. З більш ніж 2-річним
+					досвідом, я успішно навчала учнів різних вікових категорій, даючи нові
+					знання та розвиваючи навички засвоєння цих мов.
 				</div>
 				<div className='w-full h-px sm:w-px sm:h-60 bg-black' />
-				<div className='flex flex-col gap-3 sm:gap-10'>
+				<div className='flex flex-col gap-2 sm:gap-5'>
 					<div className='flex gap-2'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -41,7 +41,7 @@ export const About: FC = () => {
 							<circle cx='8.5' cy='10.5' r='1.5'></circle>
 							<path d='M15.5 10c-2 0-2.5 2-2.5 2h5s-.501-2-2.5-2z'></path>
 						</svg>
-						100+ Радісних учнів
+						Багато задоволених учнів
 					</div>
 					<div className='flex gap-2'>
 						<svg

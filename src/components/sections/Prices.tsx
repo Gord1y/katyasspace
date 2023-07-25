@@ -13,7 +13,7 @@ export default function App() {
 					</p>
 					<p className='text-2xl md:text-3xl'>
 						1 пробне заняття, на якому оцінюється рівень знань, та ми розуміємо
-						чи підходимо один одному
+						чи підходимо один одному.
 					</p>
 				</div>
 				<div className='flex flex-col gap-2 justify-center items-center p-10 snap-center bg-secondary rounded-lg text-primary md:w-1/3'>
@@ -32,8 +32,7 @@ export default function App() {
 						300грн/60хв
 					</p>
 					<p className='text-2xl md:text-3xl'>
-						Наступний урок, після пробного, під час якого уже починаємо щось
-						розбирати та обираємо шляхи вивчення
+						Звичайне заняття, під час якоро розвиваємо навички та знання.
 					</p>
 				</div>
 			</div>
