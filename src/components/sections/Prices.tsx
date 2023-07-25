@@ -28,7 +28,7 @@ export default function App() {
 				</div>
 				<div className='flex flex-col gap-2 justify-center items-center p-5 snap-center border-2 border-black text-black rounded-lg md:w-1/4'>
 					<b className='text-3xl md:text-4xl'>Разове заняття</b>
-					<p className='text-3xl md:text-4xl text-rose-400 font-black'>
+					<p className='text-3xl md:text-4xl text-rose-500 font-black'>
 						300грн/60хв
 					</p>
 					<p className='text-2xl md:text-3xl'>
