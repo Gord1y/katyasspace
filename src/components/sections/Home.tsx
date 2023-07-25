@@ -1,4 +1,4 @@
-import img from '@/images/1.jpeg'
+import img from '@/images/3.jpg'
 import Image from 'next/image'
 import { FC } from 'react'
 
