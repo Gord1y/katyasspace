@@ -117,7 +117,12 @@ export default function ContactForm() {
 			/>
 			<div className='text-xl md:text-2xl w-full'>Будь які додаткові дані</div>
 			<textarea
-				name='message'
+				{...registerForm('message', {
+					maxLength: {
+						value: 500,
+						message: 'max length is 500',
+					},
+				})}
 				rows={3}
 				placeholder='Повідомлення'
 				className='w-full p-2 rounded-md border-2 border-black placeholder:text-secondary outline-none focus:border-black'
