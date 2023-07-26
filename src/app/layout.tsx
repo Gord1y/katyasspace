@@ -38,6 +38,7 @@ export const metadata: Metadata = {
 		'mobile-web-app-capable': 'yes',
 		'msapplication-tap-highlight': 'no',
 	},
+	metadataBase: new URL('https://katyas.space/'),
 	openGraph: {
 		type: 'website',
 		siteName: 'Katyas Space',
