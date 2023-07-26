@@ -4,6 +4,7 @@ import '@/styles/global.scss'
 import cn from 'clsx'
 import type { Metadata } from 'next'
 import { Caveat } from 'next/font/google'
+import Script from 'next/script'
 import 'normalize.css/normalize.css'
 
 const montserrat = Caveat({ subsets: ['latin'] })
@@ -58,6 +59,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='uk'>
+			<Script
+				async
+				src='https://www.googletagmanager.com/gtag/js?id=G-T2JR0BKZBN'
+			/>
 			<body
 				className={cn(
 					'bg-primary font-medium text-black overflow-x-hidden',
