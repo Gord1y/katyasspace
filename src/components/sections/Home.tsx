@@ -19,13 +19,13 @@ export const Home: FC = () => {
 					</div>
 				</div>
 				<div className='flex flex-col gap-2 w-full sm:w-2/5 text-primary'>
-					<p className='text-2xl md:text-3xl'>Привіт, я</p>
-					<p className='text-6xl sm:leading-relaxed'>Волковська Катерина</p>
-					<p className='text-2xl md:text-2xl'>
+					<h2 className='text-2xl md:text-3xl'>Привіт, я</h2>
+					<h1 className='text-6xl sm:leading-relaxed'>Волковська Катерина</h1>
+					<h3 className='text-2xl md:text-2xl'>
 						Досвідчений репетитор, <br />
 						який знає багато різних методик викладання <br />
 						для різних вікових категорій.
-					</p>
+					</h3>
 				</div>
 			</div>
 		</section>

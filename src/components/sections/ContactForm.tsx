@@ -49,10 +49,10 @@ export default function ContactForm() {
 	}
 	if (submited)
 		return (
-			<div className='text-2xl md:text-3xl text-secondary'>
+			<h2 className='text-2xl md:text-3xl text-secondary'>
 				Дякую за вашу відповідь.
 				<br />Я зв’яжусь з вами найближчим часом. :)
-			</div>
+			</h2>
 		)
 	return (
 		<form
